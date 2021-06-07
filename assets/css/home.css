@@ -46,6 +46,11 @@ main{
     margin: 5px;
     border-radius: 1rem 1rem 1rem 1rem;
 }
+
+#contacts ul li:hover{
+    background-color: rgba(240, 230, 230, 0.836);
+}
+
 #contacts ul li p{
     display: inline-block;
     font-weight: bold;
