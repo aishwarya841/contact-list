@@ -1,0 +1,53 @@
+body{
+    background-image: url('../images/plane.jpg');
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    display:flex;
+    justify-content: space-around;
+}
+
+#input-form{
+    height : 500px;
+    width: 500px;
+    margin : 30px;
+}
+
+#input-form input{
+    display: block;
+    background-color: inherit;
+    border : none;
+    border-bottom: 1px solid black;
+    margin : 30px;
+    width : 90%;
+    
+}
+
+#input-form button{
+    background-color: hsl(120, 50%, 31%);
+    height: 2rem;
+    width: 6rem;
+    margin : 30px;
+}
+
+#contacts{
+    width: 800px;
+
+}
+
+#contacts ul li{
+    background-color: hsl(120, 50%, 31%);
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+#contacts ul li p{
+    display: inline-block;
+    font-weight: bold;
+   padding: 4px;
+}
