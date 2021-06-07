@@ -39,6 +39,17 @@ app.post('/create-contact',function(req,res){
 
 });
 
+app.get('/delete-contact',function(req,res){
+    var number = req.query.number;
+    var index = contactList.findIndex(contact => (contact.number == number));
+    if(index != -1){
+        contactList.splice(index,1);
+    }
+    
+    return res.redirect('/');
+
+});
+
 app.listen(port, function(err){
     if(err){
         console.log("hey you have an error");
@@ -47,3 +58,4 @@ app.listen(port, function(err){
     console.log("Welcome to this server");
 
 });
+

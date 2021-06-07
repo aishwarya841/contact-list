@@ -2,6 +2,7 @@
     <head>
         <title><%= locals.title %></title>
         <link rel="stylesheet" type="text/css" href="/css/home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
     <body>
         <h1>Contact List</h1>
@@ -18,10 +19,20 @@
             <section id="contacts">
                 
                 <ul>
+                    
                     <%for(let i of locals.contact_list){%>
                         <li>
-                            <p>Name : <%= i.name %></p>
-                            <p>Contact Number : <%= i.number %></p>
+                            <div>
+                                <p>Name : <%= i.name %></p>
+                                <p>Contact Number : <%= i.number %></p>
+
+                            </div>
+                            <div class="deleteButton">
+                                <a href="/delete-contact/?number=<%= i.number %>">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                            </div>
+                           
                         </li>
                         
                     <%}%>
