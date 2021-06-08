@@ -10,7 +10,7 @@
             <section id="input-form">
                 <form action="/create-contact" method="POST">
                     <input type="text" name="name" placeholder="Enter your Name.." required>
-                    <input type="number" name="number" placeholder="Enter your Phonenumber" required>
+                    <input type="number" name="phone" placeholder="Enter your Phonenumber" required>
                     <button type="submit">Add Contact</button>
 
                 </form>
@@ -24,11 +24,11 @@
                         <li>
                             <div>
                                 <p>Name : <%= i.name %></p>
-                                <p>Contact Number : <%= i.number %></p>
+                                <p>Contact Number : <%= i.phone %></p>
 
                             </div>
                             <div class="deleteButton">
-                                <a href="/delete-contact/?number=<%= i.number %>">
+                                <a href="/delete-contact/?id=<%= i._id %>">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
                             </div>
